@@ -2,6 +2,7 @@ Feature: JBS Article Page
 
   Background:
 #    * def articleUrl = 'https://www.cell.com/immunity/fulltext/S1074-7613(23)00443-0'\
+    * configure ssl = { trustAll: true }
 
   @Article
   Scenario: JBS Article Title matches Title from TOC Page

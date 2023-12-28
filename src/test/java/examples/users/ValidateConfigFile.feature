@@ -1,3 +1,9 @@
-Feature:
+Feature: validate the karate-config.js file
 
-Scenario:
+  @ValidateConfig
+  Scenario: print the karate.env variable
+    * print baseUrl
+#    * print articleUrl
+#    * print dummyPostCreateUrl
+#    * print jiraUserName
+#    * print jiraPassword
