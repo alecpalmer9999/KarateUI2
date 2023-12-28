@@ -1,0 +1,22 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/log_entry_factory.js", "js/policy_provider.js", "js/port.js", "js/extension_logic.js" ]
+   },
+   "default_locale": "en",
+   "description": "Extension for reporting chrome metrics and events.",
+   "icons": {
+      "128": "icons/icon_128.png",
+      "48": "icons/icon_48.png"
+   },
+   "incognito": "not_allowed",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAh1QpTNCmjLsl+nDgQG/5Lje1gmRcGUAZ4y4vvYIThS+ThUUM2e7P5/Psy2GSTTdPp4qBwxQhvyvSzU1iDqB67zvEUvpUio9sJhVPeVR8FfZShZ+4z5/N7PwY+gp7t2xUO54YiauruihzxKRWxI0Q8RfkKT4kiK2Nn9oCiS83FctjykRxB9IA1SWSv/KkLSerIVGkszcWUgedCIz0e09JkhETMSIumUJbrptjaHd7XIdCijkoD43HinoIHFATUWTIbY6v5GKd1YyXm2PLay313Ol7BUYbyO3WuSz/U9DoAncqSKJdnaaUOAEndUoYVKUu0pn7Th2j7HGegIAdwY7HoQIDAQAB",
+   "manifest_version": 2,
+   "name": "Chrome Reporting Extension",
+   "permissions": [ "alarms", "nativeMessaging", "management", "storage", "system.cpu", "system.memory", "identity", "identity.email", "tabs", "http://*/*", "https://*/*", "file://*/*", "unlimitedStorage", "safeBrowsingPrivate" ],
+   "storage": {
+      "managed_schema": "schema.json"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "3.0.0"
+}
