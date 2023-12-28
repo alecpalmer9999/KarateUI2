@@ -11,7 +11,7 @@ class UsersRunner {
         return Karate.run("classpath:examples/users").karateEnv("Stag")
 //                .tags("@HAArticleLinksOutline")
 //                .tags("@ArticleOutline")
-                .tags("@ArticleLinks")
+                .tags("@ArticleBundledTests")
 //                .tags("@ValidateConfig")
                 .relativeTo(getClass());
     }

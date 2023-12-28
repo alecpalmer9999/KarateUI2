@@ -38,8 +38,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <img src="karate-labs-logo-ring.svg" alt="Karate Labs"/>
     </a>
     <div class="nav-count">
-      <div id="nav-pass" class="bg-success">3</div>
-      <div id="nav-fail" class="bg-danger">0</div>
+      <div id="nav-pass" class="bg-success">0</div>
+      <div id="nav-fail" class="bg-danger">1</div>
     </div>
   </div>
   <div id="nav-env">
@@ -49,19 +49,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
     <div>Scenarios</div>
   </div>
   <div id="nav-date">
-    <div>2023-12-27 05:02:34 PM</div>
+    <div>2023-12-28 02:30:42 PM</div>
   </div>
 </div>
 
         <div class="nav-container">
-          <div class="nav-item passed">
+          <div class="nav-item failed">
             <a href="#[8:97]"><span>[8:97]</span> <span>Check Article Page Author, Figures, Save and Share Links</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[9:121]"><span>[9:121]</span> <span>Check Article Page Reprints and Request Links</span></a>
-          </div>
-          <div class="nav-item passed">
-            <a href="#[10:142]"><span>[10:142]</span> <span>Check Article Page PDF Link</span></a>
           </div>
         </div>
       </div>
@@ -78,7 +72,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
           <div class="scenario-heading" id="[8:97]">
             <div class="heading-container">
               <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">ArticleLinks</a>
+                <a class="badge badge-primary" href="karate-tags.html">ArticleBundledTests</a><a class="badge badge-primary" href="karate-tags.html">ArticleLinks</a>
               </div>
               <div class="scenario-keyword">
                 Scenario: <span>[8:97]</span>
@@ -86,8 +80,8 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
                 <span></span>
               </div>
             </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>45223</span>
+            <div class="scenario-time failed">
+              <span>ms:</span>&nbsp;<span>593</span>
             </div>
           </div>
           <div class="step-row">
@@ -117,7 +111,7 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
         <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
       </div>
     </div>
-    <div class="time-cell passed">239</div>
+    <div class="time-cell passed">173</div>
   </div>
 
    
@@ -142,10 +136,10 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
       <div class="step-ref passed">98</div>
       
       <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>driver articleUrl</span>
+        <span>*</span>&nbsp;<span>configure driver = {type: &#39;msedgedriver&#39;, executable: &#39;#(edgeExecutable)&#39;}</span>
       </div>
     </div>
-    <div class="time-cell passed">31517</div>
+    <div class="time-cell passed">1</div>
   </div>
 
    
@@ -167,13 +161,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.99">
-      <div class="step-ref passed">99</div>
+      <div class="step-ref failed">99</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(300)</span>
+      <div class="step-cell failed">
+        <span>Given</span>&nbsp;<span>driver articleUrl</span>
       </div>
     </div>
-    <div class="time-cell passed">343</div>
+    <div class="time-cell failed">419</div>
   </div>
 
    
@@ -195,13 +189,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.100">
-      <div class="step-ref passed">100</div>
+      <div class="step-ref skipped">100</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>driver.maximize()</span>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>delay(300)</span>
       </div>
     </div>
-    <div class="time-cell passed">30</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -223,48 +217,13 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.101">
-      <div class="step-ref passed">101</div>
+      <div class="step-ref skipped">101</div>
       
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>call read(&#39;JBSCookies.feature&#39;)</span>
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>driver.maximize()</span>
       </div>
     </div>
-    <div class="time-cell passed">169</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.101.0.call">
-        <div class="step-ref passed">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">examples.users.JBSCookies</div>
-      </div>
-      <div class="time-cell passed">96</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.101.0.call">
-    <div class="step-container" id="0.101.0.call.0.4">
-      <div class="step-ref passed">4</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>click(&quot;{button}Accept all cookies&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">96</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -276,11 +235,6 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
      
 
   
-
-</div>
-</div>
-    </div>    
-  </div>
 
 </div>
 </div>
@@ -291,13 +245,41 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.102">
-      <div class="step-ref passed">102</div>
+      <div class="step-ref skipped">102</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>call read(&#39;JBSCookies.feature&#39;)</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.103">
+      <div class="step-ref skipped">103</div>
+      
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>delay(300)</span>
       </div>
     </div>
-    <div class="time-cell passed">312</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -325,42 +307,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.104">
-      <div class="step-ref passed">104</div>
+    <div class="step-container" id="0.105">
+      <div class="step-ref skipped">105</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>click(&quot;//a[contains(@title, &#39;Correspondence information about the author&#39;)]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">103</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.105">
-      <div class="step-ref passed">105</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;dropBlock__holder article-header__info__holder lefted js--open&#39;]&quot;, &#39;class&#39;) == &#39;dropBlock__holder article-header__info__holder lefted js--open&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">70</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -382,13 +336,41 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.106">
-      <div class="step-ref passed">106</div>
+      <div class="step-ref skipped">106</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;dropBlock__holder article-header__info__holder lefted js--open&#39;]&quot;, &#39;class&#39;) == &#39;dropBlock__holder article-header__info__holder lefted js--open&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.107">
+      <div class="step-ref skipped">107</div>
+      
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>delay(3000)</span>
       </div>
     </div>
-    <div class="time-cell passed">3013</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -416,42 +398,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.108">
-      <div class="step-ref passed">108</div>
+    <div class="step-container" id="0.109">
+      <div class="step-ref skipped">109</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>click(&quot;//a[@title=&#39;open Figures menu&#39;]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">101</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.109">
-      <div class="step-ref passed">109</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;]&quot;, &#39;class&#39;) == &#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">12</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -473,13 +427,41 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.110">
-      <div class="step-ref passed">110</div>
+      <div class="step-ref skipped">110</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;]&quot;, &#39;class&#39;) == &#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.111">
+      <div class="step-ref skipped">111</div>
+      
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>delay(3000)</span>
       </div>
     </div>
-    <div class="time-cell passed">3008</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -507,42 +489,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.112">
-      <div class="step-ref passed">112</div>
+    <div class="step-container" id="0.113">
+      <div class="step-ref skipped">113</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>click(&quot;//a[contains(@title, &#39;open Save menu&#39;)]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">137</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.113">
-      <div class="step-ref passed">113</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;]&quot;, &#39;class&#39;) == &#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">8</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -564,13 +518,41 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.114">
-      <div class="step-ref passed">114</div>
+      <div class="step-ref skipped">114</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;]&quot;, &#39;class&#39;) == &#39;dropBlock__holder article-tools__dropblock__holder js--open&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.115">
+      <div class="step-ref skipped">115</div>
+      
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>delay(3000)</span>
       </div>
     </div>
-    <div class="time-cell passed">3004</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -598,42 +580,14 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
   </div>
 
   <div class="step-row">
-    <div class="step-container" id="0.116">
-      <div class="step-ref passed">116</div>
+    <div class="step-container" id="0.117">
+      <div class="step-ref skipped">117</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
         <span>When</span>&nbsp;<span>click(&quot;//a[contains(@title, &#39;open Share menu&#39;)]&quot;)</span>
       </div>
     </div>
-    <div class="time-cell passed">134</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.117">
-      <div class="step-ref passed">117</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;share__block dropBlock__holder article-tools__dropblock__holder js--open&#39;]&quot;, &#39;class&#39;) == &#39;share__block dropBlock__holder article-tools__dropblock__holder js--open&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">15</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
@@ -655,904 +609,41 @@ posthog.init('phc_M6fKk3dSX9HjglkqPSybauGas45NINb7EgsPGU8N9g1',{
 
   <div class="step-row">
     <div class="step-container" id="0.118">
-      <div class="step-ref passed">118</div>
+      <div class="step-ref skipped">118</div>
       
-      <div class="step-cell passed">
+      <div class="step-cell skipped">
+        <span>And</span>&nbsp;<span>match attribute(&quot;//div[@class=&#39;share__block dropBlock__holder article-tools__dropblock__holder js--open&#39;]&quot;, &#39;class&#39;) == &#39;share__block dropBlock__holder article-tools__dropblock__holder js--open&#39;</span>
+      </div>
+    </div>
+    <div class="time-cell skipped">0</div>
+  </div>
+
+   
+  
+  
+
+  
+
+     
+
+  
+
+</div>
+</div>
+          <div><div>
+  
+
+  
+
+  <div class="step-row">
+    <div class="step-container" id="0.119">
+      <div class="step-ref skipped">119</div>
+      
+      <div class="step-cell skipped">
         <span>And</span>&nbsp;<span>delay(3000)</span>
       </div>
     </div>
-    <div class="time-cell passed">3007</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[9:121]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">ArticleLinks</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[9:121]</span>
-                <span class="scenario-name">Check Article Page Reprints and Request Links</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>71644</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[9:121]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[9:121]bg"><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment">#    * def articleUrl = &#39;https://www.cell.com/immunity/fulltext/S1074-7613(23)00443-0&#39;\</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">1</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.122">
-      <div class="step-ref passed">122</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>driver articleUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">31204</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.123">
-      <div class="step-ref passed">123</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(300)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">311</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.124">
-      <div class="step-ref passed">124</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>driver.maximize()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">23</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.125">
-      <div class="step-ref passed">125</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>call read(&#39;JBSCookies.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">166</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.125.0.call">
-        <div class="step-ref passed">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">examples.users.JBSCookies</div>
-      </div>
-      <div class="time-cell passed">95</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.125.0.call">
-    <div class="step-container" id="0.125.0.call.0.4">
-      <div class="step-ref passed">4</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>click(&quot;{button}Accept all cookies&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">95</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Check Reprints Link</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.127">
-      <div class="step-ref passed">127</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>click(&quot;//a[contains(@title,&#39;Reprints&#39;)]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">85</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.128">
-      <div class="step-ref passed">128</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(3000)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3003</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.129">
-      <div class="step-ref passed">129</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match driver.Title == &#39;MedReprints | Elsevier’s Online Reprint Ordering Portal | MedReprints&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">14</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.130">
-      <div class="step-ref passed">130</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print(driver.Title)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">20</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.131">
-      <div class="step-ref passed">131</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>driver articleUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">30013</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.132">
-      <div class="step-ref passed">132</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(300)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">312</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Check Request Link</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.134">
-      <div class="step-ref passed">134</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>click(&quot;//a[contains(@title,&#39;Request&#39;)]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">158</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.135">
-      <div class="step-ref passed">135</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(6000)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">6017</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.136">
-      <div class="step-ref passed">136</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match driver.Title == &#39;Rightslink® by Copyright Clearance Center&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">5</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.137">
-      <div class="step-ref passed">137</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>print(driver.Title)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.138">
-      <div class="step-ref passed">138</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(300)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">307</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-        </div>
-        <div class="scenario">
-          <div class="scenario-heading" id="[10:142]">
-            <div class="heading-container">
-              <div class="scenario-tags">
-                <a class="badge badge-primary" href="karate-tags.html">ArticleLinks</a>
-              </div>
-              <div class="scenario-keyword">
-                Scenario: <span>[10:142]</span>
-                <span class="scenario-name">Check Article Page PDF Link</span>
-                <span></span>
-              </div>
-            </div>
-            <div class="scenario-time passed">
-              <span>ms:</span>&nbsp;<span>35527</span>
-            </div>
-          </div>
-          <div class="step-row">
-            <div class="step-container" id="[10:142]bg">
-              <div class="step-ref bg-step">&gt;&gt;</div>
-              <div class="step-cell passed">Background:</div>
-            </div>
-            <div class="time-cell passed"></div>
-          </div>
-          <div data-parent="[10:142]bg"><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment">#    * def articleUrl = &#39;https://www.cell.com/immunity/fulltext/S1074-7613(23)00443-0&#39;\</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.5">
-      <div class="step-ref bg-step">5</div>
-      
-      <div class="step-cell passed">
-        <span>*</span>&nbsp;<span>configure ssl = { trustAll: true }</span>
-      </div>
-    </div>
-    <div class="time-cell passed">2</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.143">
-      <div class="step-ref passed">143</div>
-      
-      <div class="step-cell passed">
-        <span>Given</span>&nbsp;<span>driver articleUrl</span>
-      </div>
-    </div>
-    <div class="time-cell passed">31305</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.144">
-      <div class="step-ref passed">144</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(300)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">310</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.145">
-      <div class="step-ref passed">145</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>driver.maximize()</span>
-      </div>
-    </div>
-    <div class="time-cell passed">23</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.146">
-      <div class="step-ref passed">146</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>call read(&#39;JBSCookies.feature&#39;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">298</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  <div>
-        
-    <div class="step-row">
-      <div class="step-container" id="0.146.0.call">
-        <div class="step-ref passed">&gt;&gt;</div>
-        <div class="step-indent"></div>
-        <div class="step-cell passed">examples.users.JBSCookies</div>
-      </div>
-      <div class="time-cell passed">251</div>
-    </div>
-    <div>
-      <div><div>
-  
-
-  
-
-  <div class="step-row" data-parent="0.146.0.call">
-    <div class="step-container" id="0.146.0.call.0.4">
-      <div class="step-ref passed">4</div>
-      <div class="step-indent"></div>
-      <div class="step-cell passed">
-        <span>Then</span>&nbsp;<span>click(&quot;{button}Accept all cookies&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">251</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-    </div>    
-  </div>
-
-</div>
-</div>
-          <div><div>
-  
-
-  <div class="step-row">
-    <div class="step-container">
-      <div class="step-ref passed"></div>
-      
-      <div class="step-cell comment"># Check PDF Link</div>
-    </div>
-    <div class="time-cell comment"></div>            
-  </div>
-
-  <div class="step-row">
-    <div class="step-container" id="0.148">
-      <div class="step-ref passed">148</div>
-      
-      <div class="step-cell passed">
-        <span>When</span>&nbsp;<span>click(&quot;//a[contains(@title,&#39;Standard PDF&#39;)]&quot;)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">215</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.149">
-      <div class="step-ref passed">149</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>match driver.Title == &#39;Albert Bendelac (1956-2023): Immunity&#39;</span>
-      </div>
-    </div>
-    <div class="time-cell passed">15</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.150">
-      <div class="step-ref passed">150</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(3000)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">3018</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.151">
-      <div class="step-ref passed">151</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>switchPage(articleUrl)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">31</div>
-  </div>
-
-   
-  
-  
-
-  
-
-     
-
-  
-
-</div>
-</div>
-          <div><div>
-  
-
-  
-
-  <div class="step-row">
-    <div class="step-container" id="0.152">
-      <div class="step-ref passed">152</div>
-      
-      <div class="step-cell passed">
-        <span>And</span>&nbsp;<span>delay(300)</span>
-      </div>
-    </div>
-    <div class="time-cell passed">309</div>
+    <div class="time-cell skipped">0</div>
   </div>
 
    
