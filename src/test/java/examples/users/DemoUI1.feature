@@ -26,34 +26,6 @@ Feature: Validating UI browser launch
     When waitFor("//input[@id='login-button']").click()
     Then delay(3000)
 
-  Scenario: JBS Search By Keyword
-    Given driver 'https://www.cell.com/cell-genomics/home'
-    Then delay(300)
-#    When click("#onetrust-accept-btn-handler")    css selector by id
-#    When click("{button}Accept all cookies")    find first button element w/ exact text
-    When click("{}Accept all cookies")
-    Then delay(300)
-    And input("//input[@id='searchText']", 'blood')
-    And delay(300)
-    Then click("//button[@title='Search']")
-    And delay(3000)
-    And def page_title = driver.title
-    And print page_title
-    And delay(5000)
-    And quit()
-
-  Scenario: JBS Print Page Title
-    Given driver 'https://www.cell.com'
-    Then delay(300)
-#    When click("#onetrust-accept-btn-handler")    css selector by id
-#    When click("{button}Accept all cookies")    find first button element w/ exact text
-    When click("{}Accept all cookies")
-    Then delay(300)
-    And def page_title = driver.title
-    And print page_title
-    And delay(5000)
-    And quit()
-
 #  Scenario: Click Bing image button
 #    Given driver 'https://www.bing.com'
 #    Then delay(3000)

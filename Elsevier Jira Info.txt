@@ -1,0 +1,32 @@
+ATATT3xFfGF01ICKtoDOXHyrvnoTD8IbGN5ON58BFWG39MSVp6Vyb6FWhZh55k345psi-62P6bXXKD-1A5zF2wel4_ok0egKuX_mNgcjO-lMRjD11PD3UBH-oE-WS83uafyWDwcGOreoefSAPUpqwCRV-DUqOhZELB352uQ3zE4yLbFCpg54EcI=EB4CB774
+
+557058%3A43ffd961-6cdd-40f4-8458-dbe355513dbd
+
+557058:43ffd961-6cdd-40f4-8458-dbe355513dbd
+
+
+GET Jira User
+curl --request GET \
+  --url 'https://your-domain.atlassian.net/rest/api/3/user?accountId=5b10ac8d82e05b22cc7d4ef5' \
+  --user 'email@example.com:<api_token>' \
+  --header 'Accept: application/json'
+
+
+https://elsevier.atlassian.net/
+
+
+curl --request GET \
+  --url 'https://elsevier.atlassian.net/rest/api/3/user?accountId=557058%3A43ffd961-6cdd-40f4-8458-dbe355513dbd' \
+  --user 'a.palmer@elsevier.com:ATATT3xFfGF01ICKtoDOXHyrvnoTD8IbGN5ON58BFWG39MSVp6Vyb6FWhZh55k345psi-62P6bXXKD-1A5zF2wel4_ok0egKuX_mNgcjO-lMRjD11PD3UBH-oE-WS83uafyWDwcGOreoefSAPUpqwCRV-DUqOhZELB352uQ3zE4yLbFCpg54EcI=EB4CB774' \
+  --header 'Accept: application/json'
+
+
+
+https://ap16.salesforce.com/services/oauth2/token
+
+
+
+
+
+
+
