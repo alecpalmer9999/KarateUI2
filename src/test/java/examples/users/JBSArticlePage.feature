@@ -93,7 +93,7 @@ Feature: JBS Article Page
       | //a[@title='open Figures menu']                                      | //div[@class='dropBlock__holder article-tools__dropblock__holder js--open']    | dropBlock__holder article-tools__dropblock__holder js--open    |
       | //a[contains(@title, 'open Save menu')]                              | //div[@class='dropBlock__holder article-tools__dropblock__holder js--open']    | dropBlock__holder article-tools__dropblock__holder js--open    |
 
-  @ArticleLinks @ArticleBundledTests
+  @ArticleLinks
   Scenario: Check Article Page Author, Figures, Save and Share Links
     Given driver articleUrl
     And delay(300)

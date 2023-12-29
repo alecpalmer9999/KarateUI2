@@ -36,7 +36,7 @@ Feature: 3D4M Validations: C1393259 & C1393198
     # Scroll down to first 3D4M item and click link -> <a> element
     Then scroll('.three-d-item').click()
     And delay(3000)
-
+    
     Examples:
       | ArticleUrl                                                    |
       | https://www.amjmed.com/article/S0002-9343(21)00224-2/fulltext |
