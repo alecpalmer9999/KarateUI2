@@ -9,10 +9,13 @@ class UsersRunner {
 //        System.setProperty("karate.env", "Prod");  YOU CAN SET ENV HERE, OR BELOW....
 //        return Karate.run("JBSUIDemoStart").relativeTo(getClass());
         return Karate.run("classpath:examples/users").karateEnv("Stag")
-                .tags("@3D4M")
+//                .tags("@3D4M")
 //                .tags("@ArticleOutline")
 //                .tags("@ArticleLinks")
 //                .tags("@ValidateConfig")
+//                .tags("@BrowserActions")
+//                .tags("@DimensionsAndPosition")
+                .tags("@HooksExample")
                 .relativeTo(getClass());
     }
 }

@@ -1,0 +1,55 @@
+{
+  "type": "object",
+  "properties": {
+    "report_user_browsing_data": {
+      "title": "Report User Browsing Behavior Information",
+      "description": "Determines whether to track user browsing behavior. If this policy is set to enabled, extensive browsing behavior data is collected.  Otherwise no data is collected.",
+      "type": "boolean"
+    },
+    "report_extensions_data": {
+      "title": "Report Extension and Plugin Information",
+      "description": "Determines whether extensions and plugins related information should be gathered. If this policy is set to enabled or not set extensions and plugins data will be gathered. If the policy is set to disabled no extension data will be gathered.",
+      "type": "boolean"
+    },
+    "report_version_data": {
+      "title": "Report OS and Chrome Version Information",
+      "description": "Determines whether OS and Chrome versions should be gathered. If this policy is set to enabled or not set version data will be gathered. If the policy is set to disabled no version information will be gathered.",
+      "type": "boolean"
+    },
+    "report_policy_data": {
+      "title": "Report Chrome Policy Information",
+      "description": "Determines whether Chrome policy information should be gathered. If this policy is set to enabled or not set Chrome policy data will be gathered. If the policy is set to disabled no Chrome policy data will be gathered.",
+      "type": "boolean"
+    },
+    "report_machine_id_data": {
+      "title": "Report Machine Identification Information",
+      "description": "Determines whether information that can be used to identify machines should be gathered. This includes machine name and network addresses. If this policy is set to enabled or not set machine identifying data will be gathered. If the policy is set to disabled no machine identifying data will be gathered.",
+      "type": "boolean"
+    },
+    "report_user_id_data": {
+      "title": "Report User Identification Information",
+      "description": "Determines whether information that can be used to identify users should be gathered. This includes OS login and Chrome Profile login data. If this policy is set to enabled or not set user identifying data will be gathered. If the policy is set to disabled no user identifying data will be gathered.",
+      "type": "boolean"
+    },
+    "report_system_telemetry_data": {
+      "title": "Report System Telemetry Information",
+      "description": "Determines whether system telemetry related information should be gathered. This includes CPU and Memory load as well as Chrome crash information. If this policy is set to enabled or not set system telemetry data will be gathered. If the policy is set to disabled no system telemetry data will be gathered.",
+      "type": "boolean"
+    },
+    "report_safe_browsing_data": {
+      "title": "Report Safe Browsing Events",
+      "description": "Determines whether Safe Browsing data should be reported. This includes security interstitials and related events, dangerous downloads or corporate password reuse and changes. If this policy is set to enabled then Safe Browsing data will be gathered. If this policy is set to disabled or not set no Safe Browsing events will be gathered.",
+      "type": "boolean"
+    },
+    "report_reporting_api_data": {
+      "title": "Report Reporting API Events",
+      "description": "Determines whether Reporting API events should be reported. This policy only takes effect if the 'report_user_browsing_data' policy is enabled.",
+      "type": "boolean"
+    },
+    "log_to_eventlog": {
+      "title": "Write Logging Data to the Event Log",
+      "description": "Determines whether the reporting should be also written to the windows system event log. If this policy is set to enabled logging data will be also written to the system event log.  If the policy is set to disabled or not set the data will only be written to the log file on disk.",
+      "type": "boolean"
+    }
+  }
+}

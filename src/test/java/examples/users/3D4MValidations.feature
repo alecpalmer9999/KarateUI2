@@ -41,3 +41,23 @@ Feature: 3D4M Validations: C1393259 & C1393198
       | ArticleUrl                                                    |
       | https://www.amjmed.com/article/S0002-9343(21)00224-2/fulltext |
       | https://www.amjmed.com/article/S0002-9343(97)00314-8/fulltext |
+
+
+  @3D4M
+  Scenario Outline: Scroll to 3D4M widget, take screenshot of 3D thumbnail image
+    Given driver ArticleUrl
+    And delay(300)
+    And driver.maximize()
+    And call read('JBSCookies.feature')
+    And delay(3000)
+    # Scroll down to first 3D4M item and take a screenshot -> <a> element
+    Then scroll('.three-d-item')
+    And screenshot()
+    And screenshot('.three-d-item')
+    And delay(3000)
+
+    Examples:
+      | ArticleUrl                                                    |
+      | https://www.amjmed.com/article/S0002-9343(21)00224-2/fulltext |
+      | https://www.amjmed.com/article/S0002-9343(97)00314-8/fulltext |
+
