@@ -1,6 +1,0 @@
-2023/12/29-16:28:10.924 8314 Creating DB C:\Users\PalmerA1\OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc\Desktop\IdeaProjects\KarateUI2\target\chrome_1703885285181\Default\WebStorage\4\IndexedDB\indexeddb.leveldb since it was missing.
-2023/12/29-16:28:10.940 8314 Reusing MANIFEST C:\Users\PalmerA1\OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc\Desktop\IdeaProjects\KarateUI2\target\chrome_1703885285181\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2023/12/29-16:28:11.437 82dc Level-0 table #5: started
-2023/12/29-16:28:11.443 82dc Level-0 table #5: 2717 bytes OK
-2023/12/29-16:28:11.450 82dc Delete type=0 #3
-2023/12/29-16:28:11.451 82dc Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)

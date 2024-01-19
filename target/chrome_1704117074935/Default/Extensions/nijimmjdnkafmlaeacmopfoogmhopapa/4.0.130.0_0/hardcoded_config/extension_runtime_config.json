@@ -1,7 +1,0 @@
-{
-    "allowedConfigSources": {
-        "hardcoded": true,
-        "managed": true,
-        "cookie": true
-    } 
-}

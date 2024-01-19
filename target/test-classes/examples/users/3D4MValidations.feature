@@ -10,6 +10,8 @@ Feature: 3D4M Validations: C1393259 & C1393198
     # verify 3D4M link in left nav menu & click it
     Then def navLink = text("{span}3D Images")
     And match navLink == '3D Images'
+    And screenshot("{span}3D Images")
+    And screenshot()
     And click("{span}3D Images")
     And delay(3000)
 #    Then scroll("//section[@data-widget-def='UX33D4Medical']") -> not using scroll, b/c clicking left nav link

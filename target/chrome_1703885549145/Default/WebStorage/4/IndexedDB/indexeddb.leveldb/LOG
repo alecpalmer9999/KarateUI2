@@ -1,7 +1,0 @@
-2023/12/29-16:33:15.266 1d78 Reusing MANIFEST C:\Users\PalmerA1\OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc\Desktop\IdeaProjects\KarateUI2\target\chrome_1703885549145\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/MANIFEST-000001
-2023/12/29-16:33:15.267 1d78 Recovering log #4
-2023/12/29-16:33:15.267 1d78 Reusing old log C:\Users\PalmerA1\OneDrive - Reed Elsevier Group ICO Reed Elsevier Inc\Desktop\IdeaProjects\KarateUI2\target\chrome_1703885549145\Default\WebStorage\4\IndexedDB\indexeddb.leveldb/000004.log 
-2023/12/29-16:33:15.522 1d78 Level-0 table #8: started
-2023/12/29-16:33:15.526 1d78 Level-0 table #8: 16965 bytes OK
-2023/12/29-16:33:15.532 1d78 Delete type=0 #4
-2023/12/29-16:33:15.532 1d78 Manual compaction at level-0 from '\x00\x04\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x05\x00\x00\x00' @ 0 : 0; will stop at (end)

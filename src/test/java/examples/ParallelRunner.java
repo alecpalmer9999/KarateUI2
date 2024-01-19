@@ -22,7 +22,7 @@ public class ParallelRunner {
                 .outputCucumberJson(true)
                 .karateEnv("Prod")
                 .tags("@ArticleLinks")
-                .parallel(1);
+                .parallel(2);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
