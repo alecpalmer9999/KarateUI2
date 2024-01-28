@@ -21,6 +21,7 @@ Feature: 3D4M Validations: C1393259 & C1393198
     When def heading = text("//h2[@id='3dm']")
     Then match heading == '3D Images'
     And delay(3000)
+    # some changes
 
     Examples:
       | ArticleUrl                                                    |
