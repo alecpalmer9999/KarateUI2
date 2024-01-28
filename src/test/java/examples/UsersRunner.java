@@ -24,7 +24,8 @@ class UsersRunner {
 //                .tags("@TextAndAttribute")
 //                .tags("@FormValue")
 //                .tags("@SwitchWindows")
-                .tags("@FileUpload")
+//                .tags("@FileUpload")
+                .tags("@BackgroundExample")
                 .relativeTo(getClass());
     }
 }
