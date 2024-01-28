@@ -2,7 +2,6 @@ Feature: Handle Alerts
 
   @Alerts
   Scenario: Close 3 types of JS Alerts
-    * configure driver = { type: 'geckodriver' }
     Given driver 'https://the-internet.herokuapp.com/javascript_alerts'
     And driver.maximize()
 
@@ -14,7 +13,7 @@ Feature: Handle Alerts
     Then dialog(true)
     * def resultText = text('#result')
     And match resultText == 'You successfully clicked an alert'
-    And print(resultText)
+    And print("The result label text is: " + resultText)
     And delay(1000)
 
     # click JS Confirm cancel button
