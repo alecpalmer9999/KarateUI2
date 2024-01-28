@@ -10,7 +10,7 @@ class UsersRunner {
 //        return Karate.run("JBSUIDemoStart").relativeTo(getClass());
         return Karate.run("classpath:examples/users").karateEnv("Stag")
                 .outputCucumberJson(true)
-                .tags("@3D4M")
+//                .tags("@3D4M")
 //                .tags("@ArticleOutline")
 //                .tags("@ArticleLinks")
 //                .tags("@ValidateConfig")
@@ -19,6 +19,8 @@ class UsersRunner {
 //                .tags("@HooksExample")
 //                .tags("@Shib")
 //                .tags("@DropDown")
+//                .tags("@Alerts")
+                .tags("@frames")
                 .relativeTo(getClass());
     }
 }

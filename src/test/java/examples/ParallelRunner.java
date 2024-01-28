@@ -21,8 +21,8 @@ public class ParallelRunner {
         Results results = Runner.path("classpath:examples/users")
                 .outputCucumberJson(true)
                 .karateEnv("Prod")
-                .tags("@ArticleLinks")
-                .parallel(2);
+                .tags("@3D4M")
+                .parallel(1);
         generateReport(results.getReportDir());
         assertTrue(results.getFailCount() == 0, results.getErrorMessages());
     }
