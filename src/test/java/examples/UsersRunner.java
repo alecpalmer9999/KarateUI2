@@ -20,7 +20,11 @@ class UsersRunner {
 //                .tags("@Shib")
 //                .tags("@DropDown")
 //                .tags("@Alerts")
-                .tags("@frames")
+//                .tags("@frames")
+//                .tags("@TextAndAttribute")
+//                .tags("@FormValue")
+//                .tags("@SwitchWindows")
+                .tags("@FileUpload")
                 .relativeTo(getClass());
     }
 }
