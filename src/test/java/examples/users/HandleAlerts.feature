@@ -2,7 +2,6 @@ Feature: Handle Alerts
 
   @Alerts
   Scenario: Close 3 types of JS Alerts
-    * configure driver = { type: 'geckodriver' }
     Given driver 'https://the-internet.herokuapp.com/javascript_alerts'
     And driver.maximize()
 
